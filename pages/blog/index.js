@@ -9,7 +9,7 @@ import { getAllPosts } from '../../lib/api';
 const Blog = ({ allPosts: { edges } }) => (
     <div className={styles.container}>
       <Head>
-        <title>Blog articles page</title>
+        <title>Blog</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
   
