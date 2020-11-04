@@ -31,6 +31,12 @@ export default function Post({ postData }) {
       <main className={styles.main}>
         <article className={blogStyles.article}>
           <div className={blogStyles.postmeta}>
+          <figure>
+                <img
+                  src={postData.featuredImage.node.sourceUrl}
+                  alt="featured-image"
+                />
+            </figure>
             <h1 className={styles.title}>{postData.title}</h1>
             <p>{formatDate(postData.date)}</p>
           </div>
